@@ -4,13 +4,12 @@
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
-    "dev": "tsx src/index.ts",
-    "build": "tsc",
-    "start": "node dist/index.js"
+    "dev": "node api.js && tsx src/index.ts",
+    "build": "node api.js && tsc",
+    "start": "node api.js && node dist/index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "dotenv": "^16.4.5",
     "express": "^5.1.0",
     "openai": "^5.19.1"
   },
